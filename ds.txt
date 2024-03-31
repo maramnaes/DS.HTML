@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz interactif</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz interactif sur un sujet de votre choix</h1>
+  </header>
+  <main>
+    <section id="quiz">
+      <h2>Bienvenue au Quiz !</h2>
+      <p>Appuyez sur le bouton pour commencer.</p>
+      <button id="start-btn">Commencer le Quiz</button>
+    </section>
+    <section id="question-container" class="hide">
+      <div id="question">Question va apparaitre ici</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Reponse 1</button>
+        <button class="btn">Reponse 2</button>
+        <button class="btn">Reponse 3</button>
+        <button class="btn">Reponse 4</button>
+      </div>
+    </section>
+    <section id="result" class="hide">
+      <h2>Resultat du Quiz</h2>
+      <p>Vous avez obtenu <span id="score">0</span> sur <span id="total-questions">0</span> questions correctes.</p>
+      <button id="restart-btn">Recommencer</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
